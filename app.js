@@ -50,7 +50,7 @@ nextButton.addEventListener("click", (e) => {
       return;
     }
 
-    points--;
+    points -= 5;
   } else {
     points += 5;
     pointsText.innerText = `Points: ${points}`;
