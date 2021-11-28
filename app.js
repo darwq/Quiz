@@ -44,8 +44,7 @@ answer.forEach((element) => {
 });
 
 nextButton.addEventListener("click", (e) => {
-  if (theClass === "") {
-  } else if (theClass !== correctAnswers[questionIndex]) {
+  if (theClass !== correctAnswers[questionIndex]) {
     if (points !== 0) {
       points -= 5;
     }
