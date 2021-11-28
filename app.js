@@ -47,12 +47,12 @@ nextButton.addEventListener("click", (e) => {
   if (theClass !== correctAnswers[questionIndex]) {
     if (points >= 5) {
       points -= 5;
-      pointsText.innerText = `Points: ${points}`;
     }
   } else {
     points += 5;
-    pointsText.innerText = `Points: ${points}`;
   }
+
+  pointsText.innerText = `Points: ${points}`;
 
   questionIndex++;
 
