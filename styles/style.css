@@ -1,0 +1,65 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 7%;
+}
+
+.header img {
+  width: 75px;
+  height: 75px;
+  margin-left: 2%;
+}
+
+.container .content {
+  width: 25%;
+  height: 50%;
+  border: 2px solid grey;
+  transform: translate(75%, 5%);
+  text-align: center;
+  padding: 2% 7%;
+}
+
+.container .points-text {
+  margin-left: 2%;
+}
+
+.container .content .answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 25%;
+}
+
+.answers h3 {
+  margin-bottom: 35%;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.content .next-button {
+  padding: 3%;
+  background: purple;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* JAVA-SCRIPT CLASSES */
+
+.checked {
+  background: greenyellow;
+}
