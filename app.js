@@ -76,6 +76,8 @@ nextButton.addEventListener("click", (e) => {
 
         points = 0;
 
+        pointsText.innerText = `Points: ${points}`;
+
         question.classList.remove("finish");
         answer.forEach((element) => {
           element.classList.remove("finish");
@@ -100,7 +102,7 @@ nextButton.addEventListener("click", (e) => {
       document.querySelector(".finish-text").classList.remove("finish");
     }
   }
-  if (questionIndex < questions.length - 1) {
+  if (questionIndex <= questions.length - 1) {
     if (theClass !== correctAnswers[questionIndex]) {
       if (points >= 5) {
         points -= 5;
