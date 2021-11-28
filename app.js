@@ -47,7 +47,7 @@ nextButton.addEventListener("click", (e) => {
   if (theClass === "") {
   } else if (theClass !== correctAnswers[questionIndex]) {
     if (points === 0) {
-      return;
+      continue;
     }
 
     points -= 5;
